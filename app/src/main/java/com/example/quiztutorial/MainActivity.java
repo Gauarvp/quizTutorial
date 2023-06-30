@@ -85,6 +85,7 @@ public class MainActivity extends AppCompatActivity {
 
                 for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
                     answerclass answer = snapshot.getValue(answerclass.class);
+//                    Log.i("TAG",answer+"   hello ");
                     questionBank.add(answer);
                 }
 
@@ -100,6 +101,7 @@ public class MainActivity extends AppCompatActivity {
                 // Handle any error that occurs while fetching data from Firebase
             }
         });
+        Log.i("TAG",currentIndex+" "+questionBank.size());
 
 
 
