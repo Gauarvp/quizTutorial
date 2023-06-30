@@ -77,16 +77,17 @@
         android:layout_width="391dp"
         android:layout_height="334dp"
         android:layout_centerInParent="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="164dp"
         android:scaleX="1.2"
         android:scaleY="1.2"
+        app:layout_constraintBottom_toBottomOf="@+id/btnChatCard"
+        app:layout_constraintStart_toStartOf="parent"
         app:lottie_autoPlay="true"
         app:lottie_loop="true"
-        app:lottie_rawRes="@raw/image"
-        tools:layout_editor_absoluteX="9dp"
-        tools:layout_editor_absoluteY="202dp">
+        app:lottie_rawRes="@raw/questionmark">
 
     </com.airbnb.lottie.LottieAnimationView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
