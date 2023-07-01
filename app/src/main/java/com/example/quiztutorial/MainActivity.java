@@ -157,16 +157,19 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initializeQuestion(List<answerclass> questionBank) {
-        CurrentQuestion = questionBank.get(currentIndex).getQuestion();
-        question.setText(CurrentQuestion);
-        CurrentOptionA = questionBank.get(currentIndex).getOptionA();
-        optionA.setText(CurrentOptionA);
-        CurrentOptionB = questionBank.get(currentIndex).getOptionB();
-        optionB.setText(CurrentOptionB);
-        CurrentOptionC = questionBank.get(currentIndex).getOptionC();
-        optionC.setText(CurrentOptionC);
-        CurrentOptionD = questionBank.get(currentIndex).getOptionD();
-        optionD.setText(CurrentOptionD);
+
+
+
+            CurrentQuestion = questionBank.get(currentIndex).getQuestion();
+            question.setText(CurrentQuestion);
+            CurrentOptionA = questionBank.get(currentIndex).getOptionA();
+            optionA.setText(CurrentOptionA);
+            CurrentOptionB = questionBank.get(currentIndex).getOptionB();
+            optionB.setText(CurrentOptionB);
+            CurrentOptionC = questionBank.get(currentIndex).getOptionC();
+            optionC.setText(CurrentOptionC);
+            CurrentOptionD = questionBank.get(currentIndex).getOptionD();
+            optionD.setText(CurrentOptionD);
 
         // Add click listeners and updateQuestion() method as before
         // ...
@@ -210,6 +213,11 @@ public class MainActivity extends AppCompatActivity {
     @SuppressLint("SetTextI18n")
     private void updateQuestion() {
         PROGRESS_BAR = (int) Math.ceil(100/questionBank.size());
+// Get the reference to the ProgressBar
+        ProgressBar progressBar = findViewById(R.id.progress_bar);
+
+// Set the progress color
+        progressBar.getProgressDrawable().setColorFilter(getResources().getColor(R.color.colorPrimary), android.graphics.PorterDuff.Mode.SRC_IN);
 
         currentIndex=(currentIndex+1)%questionBank.size();
 

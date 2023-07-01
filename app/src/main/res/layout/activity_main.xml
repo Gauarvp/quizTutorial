@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/QuestionNumber"
-        android:text="@string/question_number"
+        android:text="1/10 questions"
         android:layout_marginTop="30dp"
         android:textColor="#FAF7F6"
         android:textStyle="bold"
@@ -171,30 +171,19 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_marginTop="20dp">
+
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:id="@+id/score"
-            android:textStyle="bold"
-            android:textColor="#ffffff"
-            android:text="@string/score"
-            android:layout_gravity="end"
-            android:padding="10dp"/>
-
-
-        <ProgressBar
-            android:layout_width="fill_parent"
+            android:layout_width="412dp"
             android:layout_height="wrap_content"
-            android:backgroundTint="#ffa384"
-            android:layout_gravity="bottom"
-            android:id="@+id/progress_bar"
-            style="@android:style/Widget.ProgressBar.Horizontal"
-            android:indeterminate="false"
-            android:progressBackgroundTint="#F5F3F8">
-
-        </ProgressBar>
-
-
+            android:layout_gravity="end"
+            android:padding="10dp"
+            android:text="score  0/10"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="24dp"
+            />
 
 
     </LinearLayout>

@@ -10,8 +10,8 @@
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
-        android:layout_width="413dp"
-        android:layout_height="130dp"
+        android:layout_width="411dp"
+        android:layout_height="135dp"
         android:layout_marginTop="16dp"
         android:background="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
@@ -29,25 +29,29 @@
             android:textSize="28dp"
             android:textStyle="bold" />
 
-        <Button
-            android:id="@+id/btnSignOut"
-            android:layout_width="140dp"
-            android:layout_height="140dp"
-            android:layout_gravity="end"
-            android:layout_marginEnd="15dp"
-            android:autoSizeMaxTextSize="50sp"
-            android:background="@drawable/size_bg"
-            android:paddingHorizontal="25dp"
-            android:text="Sign out"
-            android:textColor="@color/white" />
 
     </androidx.appcompat.widget.Toolbar>
 
+    <Button
+        android:id="@+id/btnSignOut"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:layout_gravity="end"
+        android:layout_marginTop="144dp"
+        android:layout_marginEnd="16dp"
+        android:autoSizeMaxTextSize="50sp"
+        android:background="@drawable/size_bg"
+        android:paddingHorizontal="25dp"
+        android:text="Sign out"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnChatCard" />
+
     <androidx.cardview.widget.CardView
         android:id="@+id/btnChatCard"
-        android:layout_width="389dp"
-        android:layout_height="144dp"
-        android:layout_marginStart="8dp"
+        android:layout_width="379dp"
+        android:layout_height="145dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="352dp"
         android:backgroundTint="@color/black"
         android:elevation="15dp"
@@ -57,7 +61,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar"
-        app:layout_constraintVertical_bias="0.567">
+        app:layout_constraintVertical_bias="0.385">
 
         <TextView
             android:layout_width="292dp"
@@ -86,7 +90,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/btnChatCard"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintVertical_bias="0.835"
         app:lottie_autoPlay="true"
         app:lottie_loop="true"
         app:lottie_rawRes="@raw/exams">

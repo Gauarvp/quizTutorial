@@ -19,7 +19,7 @@ xmlns:tools="http://schemas.android.com/tools"
         android:name=".splash"
         android:exported="false" />
     <activity
-        android:name=".OnBoarding"
+        android:name=".MenuActivity"
         android:exported="false" />
     <activity
         android:name=".RegisterActivity"
@@ -28,7 +28,7 @@ xmlns:tools="http://schemas.android.com/tools"
         android:name=".login_activity"
         android:exported="false" />
     <activity
-        android:name=".MenuActivity"
+        android:name=".OnBoarding"
         android:exported="true">
         <intent-filter>
             <action android:name="android.intent.action.MAIN" />
