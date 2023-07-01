@@ -175,7 +175,7 @@ public class MainActivity extends AppCompatActivity {
         // ...
 
         // Update the UI as needed
-        progressBar.setMax(questionBank.size() * PROGRESS_BAR);
+
         score.setText("Score: " + mscore + "/" + questionBank.size());
         questionnumber.setText(qn + "/" + questionBank.size() + " Question");
     }
@@ -198,7 +198,7 @@ public class MainActivity extends AppCompatActivity {
         {
             Toast.makeText(getApplicationContext(),"Right",Toast.LENGTH_SHORT).show();
             mscore=mscore+1;
-            progressBar.incrementProgressBy(PROGRESS_BAR);
+
         }
         else
         {
@@ -212,12 +212,12 @@ public class MainActivity extends AppCompatActivity {
 
     @SuppressLint("SetTextI18n")
     private void updateQuestion() {
-        PROGRESS_BAR = (int) Math.ceil(100/questionBank.size());
+
 // Get the reference to the ProgressBar
 
 
 // Set the progress color
-        progressBar.getProgressDrawable().setColorFilter(getResources().getColor(R.color.colorPrimary), android.graphics.PorterDuff.Mode.SRC_IN);
+
 
         currentIndex=(currentIndex+1)%questionBank.size();
 
