@@ -77,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
 
         chechkout1=findViewById(R.id.selectoption);
         checkout2=findViewById(R.id.CorrectAnswer);
-        progressBar=findViewById(R.id.progress_bar);
+
 
 
         question.setText(CurrentQuestion);
@@ -214,7 +214,7 @@ public class MainActivity extends AppCompatActivity {
     private void updateQuestion() {
         PROGRESS_BAR = (int) Math.ceil(100/questionBank.size());
 // Get the reference to the ProgressBar
-        ProgressBar progressBar = findViewById(R.id.progress_bar);
+
 
 // Set the progress color
         progressBar.getProgressDrawable().setColorFilter(getResources().getColor(R.color.colorPrimary), android.graphics.PorterDuff.Mode.SRC_IN);
